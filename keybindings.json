@@ -1,12 +1,17 @@
 // Place your key bindings in this file to override the defaults
 [
     {
-        "key": "ctrl+oem_4",
+    "key": "ctrl+r ctrl+r",
+    "command": "editor.action.changeAll",
+    "when": "editorTextFocus && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+oem_2",
         "command": "workbench.action.terminal.focus",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+oem_4",
+        "key": "shift+alt+oem_2", // oem_2: '
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
     },
